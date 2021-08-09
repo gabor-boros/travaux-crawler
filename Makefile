@@ -9,6 +9,7 @@ help: ## Show available targets
 
 prerequisites: ## Download and install prerequisites
 	go install github.com/goreleaser/goreleaser@latest
+	go install github.com/sqs/goreturns@latest
 
 deps: ## Download the dependencies
 	go mod download
@@ -22,7 +23,7 @@ release: ## Release a new version on GitHub
 	goreleaser release --rm-dist --auto-snapshot
 
 format: deps ## Run formatter on the project
-	go fmt ./...
+	goreturns -b -local -p -w -e -l .
 
 clean: ## Clean up project root
 	rm -rf bin/

@@ -4,9 +4,10 @@ import (
 	"fmt"
 	"gabor-boros/travaux-crawler/internal/pkg/ocim"
 	"gabor-boros/travaux-crawler/internal/pkg/travaux"
-	"github.com/gocolly/colly/v2"
 	"net/url"
 	"strings"
+
+	"github.com/gocolly/colly/v2"
 )
 
 type CrawlResult map[ocim.AppServer][]string

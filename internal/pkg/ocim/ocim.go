@@ -3,9 +3,10 @@ package ocim
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/google/uuid"
 	"net/http"
 	"net/url"
+
+	"github.com/google/uuid"
 )
 
 type OpenStackServer struct {

@@ -6,11 +6,12 @@ import (
 	"gabor-boros/travaux-crawler/internal/pkg/crawler"
 	"gabor-boros/travaux-crawler/internal/pkg/ocim"
 	"gabor-boros/travaux-crawler/internal/pkg/travaux"
-	"github.com/spf13/cobra"
-	"github.com/spf13/viper"
 	"net/http"
 	"net/url"
 	"os"
+
+	"github.com/spf13/cobra"
+	"github.com/spf13/viper"
 )
 
 // cfgFile is globally set by the argument parser
